@@ -1,0 +1,1 @@
+Hej! Detta är min systemmentor- och zoo-uppgift, och jag vill gärna dela projektet med dig, Richard, för att få feedback. Jag blir väldigt stressad när jag ska presentera inför andra och har därför svårt att göra det muntligt. Därför skickar jag projektet här istället.
