@@ -4,178 +4,277 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Systementor Zoo</title>
+    <meta name="theme-color" content="#183c2b">
+    <meta name="description"
+        content="Välkommen till Systementor Zoo – en grön och nära djurupplevelse för hela familjen.">
+    <title>Systementor Zoo – nära naturen, nära djuren</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Hoppa till innehållet</a>
 
-    <header class="main">
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Hem</a></li>
-                <li><a href="#vara-djur">Våra Djur</a></li>
-                <li><a href="#att-gora">Att Göra</a></li>
-                <li><a href="#hitta-oss">Hitta oss</a></li>
-                <li><a href="#prenyhetsbrev">Prenumerera på nyhetsbrev</a></li>
-            </ul>
+    <header class="hero" id="hem">
+        <nav class="navbar" aria-label="Huvudmeny">
+            <a class="brand" href="#hem" aria-label="Systementor Zoo, till startsidan">
+                <span class="brand-mark" aria-hidden="true">✳</span>
+                <span>Systementor <strong>Zoo</strong></span>
+            </a>
+            <details class="nav-menu" open>
+                <summary aria-label="Visa menyn">
+                    <span class="menu-label">Meny</span>
+                    <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+                </summary>
+                <ul>
+                    <li><a href="#hem">Hem</a></li>
+                    <li><a href="#vara-djur">Våra Djur</a></li>
+                    <li><a href="#att-gora">Att Göra</a></li>
+                    <li><a href="#hitta-oss">Hitta oss</a></li>
+                    <li><a class="nav-cta" href="#nyhetsbrev">Prenumerera på nyhetsbrev</a></li>
+                </ul>
+            </details>
         </nav>
 
-        <div class="main-text">
-            <h1 class="site-title">Systementor Zoo</h1>
-            <h2 class="site-subtitle">Upplev djurens värld på nära håll</h2>
+        <div class="hero-content">
+            <p class="eyebrow hero-eyebrow"><span aria-hidden="true">✳</span> En vildare vardag väntar</p>
+            <h1>Systementor <span>Zoo</span></h1>
+            <p class="hero-subtitle">Upplev djurens värld på nära håll</p>
+            <p class="hero-copy">Möt nyfikna blickar, upptäck grönskande stigar och skapa minnen som stannar kvar långt efter besöket.</p>
+            <a class="button button-light" href="#att-gora">Planera ditt besök <span aria-hidden="true">→</span></a>
+            <a class="scroll-cue" href="#main-content"><span aria-hidden="true">↓</span> Upptäck mer</a>
         </div>
+        <div class="hero-note"><span aria-hidden="true">🌿</span> Nära naturen, nära djuren</div>
     </header>
 
-    <section class="animals-section">
-        <h2 class="section-title" id="vara-djur">Alla våra fantastiska djur</h2>
-        <div class="animals">
-            <img src="lejon.jpg" alt="lejon">
-            <img src="varg.jpg" alt="varg">
-            <img src="alg.jpg" alt="Älg">
-            <img src="papegoja.jpg" alt="Papegoja">
-        </div>
-    </section>
-
-    <section class="todo">
-        <h2 class="todo-title" id="att-gora">Att Göra</h2>
-        <div class="todo-items">
-            <div class="todo-item">
-                <div class="icon">🧭🚶</div>
-                <h2>Guidad visning</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus
-                    ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium
-                    tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
-                </p>
+    <main id="main-content">
+        <section class="section animals-section" id="vara-djur" aria-labelledby="animals-title">
+            <div class="section-heading">
+                <p class="eyebrow">Möt våra invånare</p>
+                <h2 id="animals-title">Stora personligheter.<br><span>Ännu större tassar.</span></h2>
+                <p>Från skogens tysta steg till savannens rytande – här finns alltid något nytt att upptäcka.</p>
             </div>
-            <div class="todo-item">
-                <div class="icon">🍽️</div>
-                <h2>Restaurang</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus
-                    ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium
-                    tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
-                </p>
+            <div class="animal-gallery">
+                <figure class="animal-photo animal-photo-large">
+                    <img src="lejon.jpg" alt="Lejonet vilar i grönskan" loading="lazy">
+                    <figcaption><span>01 / Savannens kung</span><strong>Lejon</strong></figcaption>
+                </figure>
+                <figure class="animal-photo animal-photo-wolf">
+                    <img src="varg.jpg" alt="Varg i sin naturliga miljö" loading="lazy">
+                    <figcaption><span>02 / Skogens flock</span><strong>Varg</strong></figcaption>
+                </figure>
+                <figure class="animal-photo animal-photo-moose">
+                    <img src="alg.jpg" alt="Älg med sin karakteristiska siluett" loading="lazy">
+                    <figcaption><span>03 / Skogens jätte</span><strong>Älg</strong></figcaption>
+                </figure>
+                <figure class="animal-photo animal-photo-parrot">
+                    <img src="papegoja.jpg" alt="Färgstark papegoja bland blad" loading="lazy">
+                    <figcaption><span>04 / Fjäderlätt charm</span><strong>Papegoja</strong></figcaption>
+                </figure>
             </div>
-            <div class="todo-item">
-                <div class="icon">🏰</div>
-                <h2>Lekpark</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus
-                    ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium
-                    tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
-                </p>
+        </section>
+
+        <section class="section things-section" id="att-gora" aria-labelledby="things-title">
+            <div class="section-heading section-heading-centered">
+                <p class="eyebrow">En dag full av upptäckter</p>
+                <h2 id="things-title">Mer än bara <span>ett besök.</span></h2>
+                <p>Ta dagen i er egen takt. Här väntar upplevelser för både små upptäckare och stora naturvänner.</p>
             </div>
-            <div class="todo-item">
-                <div class="icon">🐺🦜🦁🦌</div>
-                <h2>Träffa djuren</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus
-                    ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium
-                    tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
-                </p>
+            <div class="activity-grid">
+                <article class="activity-card">
+                    <span class="activity-icon" aria-hidden="true">🧭🚶</span>
+                    <p class="card-kicker">Följ med ut</p>
+                    <h3>Guidad visning</h3>
+                    <p>Följ våra kunniga guider på en promenad bakom kulisserna och hör berättelserna som gör varje möte speciellt.</p>
+                    <a href="#hitta-oss">Planera din dag <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="activity-card">
+                    <span class="activity-icon" aria-hidden="true">🍽️</span>
+                    <p class="card-kicker">En god paus</p>
+                    <h3>Restaurang</h3>
+                    <p>Fyll på med något gott mellan äventyren – vi dukar upp smaker som gör hela familjen glad.</p>
+                    <a href="#restauranger">Upptäck maten <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="activity-card">
+                    <span class="activity-icon" aria-hidden="true">🏰</span>
+                    <p class="card-kicker">Spring av dig</p>
+                    <h3>Lekpark</h3>
+                    <p>Klättra, gunga och hitta på egna äventyr i en lekfull oas mitt bland träd och grönska.</p>
+                    <a href="#lekpark">Hitta leken <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="activity-card">
+                    <span class="activity-icon" aria-hidden="true">🐺🦜🦁🦌</span>
+                    <p class="card-kicker">Nära naturen</p>
+                    <h3>Träffa djuren</h3>
+                    <p>Stanna till, lyssna och se vad djuren har för sig. Varje möte bjuder på en liten berättelse.</p>
+                    <a href="#vara-djur">Möt våra djur <span aria-hidden="true">↗</span></a>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="info-section">
-        <h2>Lekpark för barnen</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex
-            sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis.
-            Pretium tellus duis convallis tempus leo eu aenean.
-        </p>
-        <img src="lekparkZoo.jpg" alt="lekparkZoo" class="lekparkZoo-img">
-
-        <h2>Restauranger</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex
-            sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis.
-            Pretium tellus duis convallis tempus leo eu aenean.
-        </p>
-        <img src="restaurang.jpg" alt="restaurang" class="restaurang-img">
-    </section>
-
-    <section class="table-section">
-        <h2>Djurtabell</h2>
-        <div class="table-wrapper">
-            <table class="animals-table">
-                <thead>
-                    <tr>
-                        <th>Namn</th>
-                        <th>Art</th>
-                        <th>Vikt</th>
-                        <th>Info (Wikipedia)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Lejon</td>
-                        <td><img src="lejon.jpg" alt="Lejon" class="table-img"></td>
-                        <td>150-250 kg (Hanar är tyngst)</td>
-                        <td><a href="https://sv.wikipedia.org/wiki/Lejon" target="_blank">Lejon Info</a></td>
-                    </tr>
-                    <tr>
-                        <td>Varg</td>
-                        <td><img src="varg.jpg" alt="Varg" class="table-img"></td>
-                        <td>35-55 kg</td>
-                        <td><a href="https://sv.wikipedia.org/wiki/Varg" target="_blank">Varg Info</a></td>
-                    </tr>
-                    <tr>
-                        <td>Älg</td>
-                        <td><img src="alg.jpg" alt="Älg" class="table-img"></td>
-                        <td>300-500 kg (Kan bli upp till 700 kg)</td>
-                        <td><a href="https://sv.wikipedia.org/wiki/%C3%84lgar" target="_blank">Älg Info</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Papegoja</td>
-                        <td><img src="papegoja.jpg" alt="Papegoja" class="table-img"></td>
-                        <td>0,1 - 1,5 kg (Beroende på art)</td>
-                        <td><a href="https://sv.wikipedia.org/wiki/Papegojf%C3%A5glar" target="_blank">Papegoja Info</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <section class="map-section">
-        <h2 id="hitta-oss">Hitta oss</h2>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.3971686800905!2d18.1058582!3d59.3263227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f82aafeda9437%3A0x2c35b6cfd6468531!2sSkansen!5e0!3m2!1ssv!2sse!4v1764593334251!5m2!1ssv!2sse"
-            width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </section>
-
-    <section class="form-section">
-        <h2 id="prenyhetsbrev">Prenumerera på nyhetsbrev</h2>
-        <form action="https://http-echo-server.azurewebsites.net" method="post" class="subscribe-form">
-            <div class="form-fields-container">
-                <div class="input-group">
-                    <label for="firstname">Förnamn <span>*</span></label>
-                    <input id="firstname" name="firstname" type="text" placeholder="Förnamn" required>
+        <section class="feature-section" aria-label="Familjevänliga upplevelser">
+            <article class="feature-panel" id="lekpark">
+                <div class="feature-image">
+                    <img src="lekparkZoo.jpg" alt="Lekfull plats för barnens upptäcktsfärd" loading="lazy">
+                    <span class="image-stamp" aria-hidden="true">Lek<br>& upptäck</span>
                 </div>
-                <div class="input-group">
-                    <label for="lastname">Efternamn <span>*</span></label>
-                    <input id="lastname" name="lastname" type="text" placeholder="Efternamn" required>
+                <div class="feature-copy">
+                    <p class="eyebrow">Små ben, stora äventyr</p>
+                    <h2>Lekpark för <span>barnen</span></h2>
+                    <p>Här får fantasin ta täten. Barnen kan klättra, balansera och hitta på egna upptäcktsresor medan vuxna njuter av en stund i det gröna.</p>
+                    <p>Ta en paus på en bänk, packa upp matsäcken och låt leken få ta den tid den behöver.</p>
+                    <a class="text-link" href="#hitta-oss">Planera familjens besök <span aria-hidden="true">→</span></a>
                 </div>
-                <div class="input-group">
-                    <label for="age">Ålder <span>*</span></label>
-                    <input id="age" name="age" type="number" min="18" max="100" placeholder="18" required>
+            </article>
+            <article class="feature-panel feature-panel-reverse" id="restauranger">
+                <div class="feature-image">
+                    <img src="restaurang.jpg" alt="Välkomnande restaurang för en paus under zoobesöket" loading="lazy">
+                    <span class="image-stamp image-stamp-sun" aria-hidden="true">Smaka<br>på dagen</span>
                 </div>
-                <div class="input-group">
-                    <label for="email">E-post <span>*</span></label>
-                    <input id="email" name="email" type="email" placeholder="exempel@email.se" required>
+                <div class="feature-copy">
+                    <p class="eyebrow">Gott för både stora och små</p>
+                    <h2>Matpaus med <span>guldkant</span></h2>
+                    <p>Våra restauranger är den perfekta pausen mellan upptäckterna. Slå dig ner för en lunch, något litet från caféet eller en välförtjänt fika.</p>
+                    <p>Det finns plats för hela familjen – och för de bästa berättelserna från dagens djurmöten.</p>
+                    <a class="text-link" href="#hitta-oss">Hitta hit <span aria-hidden="true">→</span></a>
                 </div>
-            </div>
-            <div class="form-footer">
-                <p class="form-note"><span>*</span> Obligatoriska uppgifter</p>
-                <button type="submit" id="submit-button">Prenumerera</button>
-            </div>
-        </form>
-    </section>
+            </article>
+        </section>
 
-    <footer>
-        SystemMentorZoo ©2025
+        <section class="section facts-section" aria-labelledby="facts-title">
+            <div class="section-heading">
+                <p class="eyebrow">Nyfiken på fakta?</p>
+                <h2 id="facts-title">Lär känna våra <span>djur.</span></h2>
+                <p>Varje art är unik. Här är några snabba fakta att ta med på upptäcktsfärden.</p>
+            </div>
+            <div class="table-wrap">
+                <table class="animals-table">
+                    <caption>Fakta om några av djuren på Systementor Zoo</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Djur</th>
+                            <th scope="col">Art</th>
+                            <th scope="col">Vikt</th>
+                            <th scope="col">Läs mer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><span class="table-animal"><img src="lejon.jpg" alt="" loading="lazy">Lejon</span></th>
+                            <td>Panthera leo</td>
+                            <td>120–250 kg</td>
+                            <td><a href="https://sv.wikipedia.org/wiki/Lejon" target="_blank" rel="noopener noreferrer">Lejonfakta <span class="visually-hidden">(öppnas i ny flik)</span> ↗</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span class="table-animal"><img src="varg.jpg" alt="" loading="lazy">Varg</span></th>
+                            <td>Canis lupus</td>
+                            <td>25–55 kg</td>
+                            <td><a href="https://sv.wikipedia.org/wiki/Varg" target="_blank" rel="noopener noreferrer">Vargfakta <span class="visually-hidden">(öppnas i ny flik)</span> ↗</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span class="table-animal"><img src="alg.jpg" alt="" loading="lazy">Älg</span></th>
+                            <td>Alces alces</td>
+                            <td>200–700 kg</td>
+                            <td><a href="https://sv.wikipedia.org/wiki/%C3%84lg" target="_blank" rel="noopener noreferrer">Älgfakta <span class="visually-hidden">(öppnas i ny flik)</span> ↗</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span class="table-animal"><img src="papegoja.jpg" alt="" loading="lazy">Papegoja</span></th>
+                            <td>Psittaciformes</td>
+                            <td>0,1–1,5 kg</td>
+                            <td><a href="https://sv.wikipedia.org/wiki/Papegojf%C3%A5glar" target="_blank" rel="noopener noreferrer">Papegojfakta <span class="visually-hidden">(öppnas i ny flik)</span> ↗</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="visit-section" id="hitta-oss" aria-labelledby="visit-title">
+            <div class="visit-copy">
+                <p class="eyebrow">Ditt nästa äventyr börjar här</p>
+                <h2 id="visit-title">Hitta hit.<br><span>Hitta hem till naturen.</span></h2>
+                <p>Gör plats för en dag med frisk luft, ny kunskap och fina möten. Vi ser fram emot att välkomna er till Systementor Zoo.</p>
+                <a class="button button-light" href="https://www.google.com/maps/search/?api=1&query=Systementor+Zoo" target="_blank" rel="noopener noreferrer">
+                    Öppna vägbeskrivning <span aria-hidden="true">↗</span>
+                    <span class="visually-hidden">(öppnas i ny flik)</span>
+                </a>
+            </div>
+            <div class="visit-details">
+                <div><span class="detail-icon" aria-hidden="true">⌖</span><p><strong>En grön oas nära stan</strong><br>Sök efter Systementor Zoo i din kartapp.</p></div>
+                <div><span class="detail-icon" aria-hidden="true">◷</span><p><strong>Öppet alla dagar</strong><br>Se dagens tider innan du ger dig av.</p></div>
+                <div><span class="detail-icon" aria-hidden="true">♡</span><p><strong>För hela familjen</strong><br>Ta med nyfikenheten – vi ordnar resten.</p></div>
+            </div>
+        </section>
+
+        <section class="newsletter-section" id="nyhetsbrev" aria-labelledby="newsletter-title">
+            <div class="newsletter-intro">
+                <p class="eyebrow">Små hälsningar från det vilda</p>
+                <h2 id="newsletter-title">Få mer natur<br><span>i inkorgen.</span></h2>
+                <p>Prenumerera på vårt nyhetsbrev för säsongens nyheter, familjetips och glimtar från livet på zoo.</p>
+                <span class="newsletter-leaf" aria-hidden="true">✳</span>
+            </div>
+            <form class="subscribe-form" id="subscribe-form">
+                <p class="form-intro">Välkommen till vår värld! <span>* obligatoriska fält</span></p>
+                <div class="form-fields">
+                    <div class="input-group">
+                        <label for="firstname">Förnamn <span aria-hidden="true">*</span></label>
+                        <input id="firstname" name="firstname" type="text" autocomplete="given-name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="lastname">Efternamn <span aria-hidden="true">*</span></label>
+                        <input id="lastname" name="lastname" type="text" autocomplete="family-name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="age">Ålder <span aria-hidden="true">*</span></label>
+                        <input id="age" name="age" type="number" min="1" max="120" inputmode="numeric" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">E-post <span aria-hidden="true">*</span></label>
+                        <input id="email" name="email" type="email" autocomplete="email" required>
+                    </div>
+                </div>
+                <p class="privacy-note">Det här är en demo. Dina uppgifter skickas inte vidare.</p>
+                <button class="button button-dark" type="submit">Prenumerera <span aria-hidden="true">→</span></button>
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="#hem"><span class="brand-mark" aria-hidden="true">✳</span><span>Systementor <strong>Zoo</strong></span></a>
+        <p>En grönare plats för stora och små upptäckter.</p>
+        <small>SystementorZoo ©<span id="current-year">2026</span></small>
     </footer>
 
+    <script>
+        const navMenu = document.querySelector(".nav-menu");
+        const mobileMenuQuery = window.matchMedia("(max-width: 700px)");
+        navMenu.open = !mobileMenuQuery.matches;
+        mobileMenuQuery.addEventListener("change", (event) => {
+            navMenu.open = !event.matches;
+        });
+        navMenu.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", () => {
+                if (mobileMenuQuery.matches) navMenu.open = false;
+            });
+        });
+
+        const year = document.getElementById("current-year");
+        year.textContent = new Date().getFullYear();
+
+        const subscribeForm = document.getElementById("subscribe-form");
+        const formStatus = document.getElementById("form-status");
+
+        subscribeForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+            if (!subscribeForm.reportValidity()) return;
+
+            formStatus.textContent = "Tack för ditt intresse! I demo-läget sparas eller skickas inga uppgifter.";
+            subscribeForm.reset();
+        });
+    </script>
 </body>
 
 </html>
