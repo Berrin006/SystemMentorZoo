@@ -45,7 +45,7 @@ SystementorZoo/
 Följ dessa enkla steg för att köra projektet lokalt på din dator:
 1. **Klona repot** (eller ladda ner koden som ZIP):
 ```bash
-git clone [https://github.com/DittAnvandarnamn/SystementorZoo.git](https://github.com/DittAnvandarnamn/SystementorZoo.git)
+git clone https://github.com/Berrin006/SystemMentorZoo.git
 ```
 2. **Öppna mappen** i din kodredigerare (t.ex. [VS Code](https://code.visualstudio.com/)).
 3. **Starta via Live Server:**
